@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">calculator</string>
+    <string name="click_on_me">Click on me</string>
+    <string name="price">Стоимость недвижимости</string>
+    <string name="First_contribution">Первый взнос</string>
+    <string name="Interest_rate">Процентная ставка</string>
+    <string name="Credit_term">Срок кредита</string>
+</resources>

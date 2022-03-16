@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0"
+    android:background="#D5CDCD"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="144dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="#D5CDCD">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/Text_Price"
+                    style="@style/String"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:baselineAligned="true"
+                    android:ems="10"
+                    android:hint="@string/price"
+                    android:inputType="phone" />
+
+                <EditText
+                    android:id="@+id/Text_Interest_rate"
+                    style="@style/String"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/Interest_rate"
+                    android:inputType="phone" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/Text_First_contribution"
+                    style="@style/String"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:baselineAligned="true"
+                    android:ems="10"
+                    android:hint="@string/First_contribution"
+                    android:inputType="phone" />
+
+                <EditText
+                    android:id="@+id/Text_Credit_term"
+                    style="@style/String"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:baselineAligned="true"
+                    android:ems="10"
+                    android:hint="@string/Credit_term"
+
+                    android:inputType="phone" />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/my_button"
+            android:gravity="center"
+            android:layout_marginBottom="15sp"
+
+            android:text="Рассчитать" />
+
+        <Button
+            android:id="@+id/activity2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Справочная информация"
+            android:background="@drawable/my_button" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Результат ежемесячного платежа"
+            android:inputType=""
+            android:textColor="@color/purple_200"
+            android:textSize="25dp"
+            android:typeface="sans" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/accessibilityEventTypes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#D5CDCD"
+            android:progressTint="#8BC34A"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</LinearLayout>
